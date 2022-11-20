@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <style>
+        .boxes {
+            display: flex;
+        }
+
+        .boxes div {
+            flex: 1;
+            margin: 4em 1em;
+            border: 2px solid green;
+            background-color: #fff;
+            line-height: 60px;
+            text-align: center;
+        }
+    </style>
+
+    <div class="boxes">
+        <div style="transform: translate(3em, 0);">box 1</div>
+        <div style="transform: rotate(30deg); border-color: red;">box 2</div>
+        <div style="transform: translate(-3em, 1em);">box 3</div>
+        <div style="transform: scale(2);">box 4</div>
+    </div>
+
+
+
+    <style>
+
+        .boxes  div {
+          margin: 4em 1em;
+          border: 2px solid green;
+          background-color: #fff;
+          line-height: 60px;
+          text-align: center;
+          -webkit-transition: 1s ease-in-out;
+          -moz-transition: 1s ease-in-out;
+          -o-transition: 1s ease-in-out;
+          transition: 1s ease-in-out;
+        }
+        .boxes  div.slideright:hover {
+          transform: translate(3em, 0);
+        }
+      
+      </style>
+      
+      <div class="boxes">
+        <div class="slideright">box 1</div>
+      </div>
+
+
+</body>
+
+</html>
